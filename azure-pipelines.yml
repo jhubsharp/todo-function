@@ -38,6 +38,6 @@ steps:
   inputs:
     azureSubscription: 'Free Trial(52e3fd2e-facb-4326-b2cf-62e48ee1059f)'
     appType: 'functionApp'
-    appName: 'HelloFunction'
+    appName: 'hello-function-sample'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
