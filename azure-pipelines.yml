@@ -28,11 +28,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
+- task: DotNetCoreCLI@2
   inputs:
-    testSelector: 'testAssemblies'
-    testAssemblyVer2: '**\*Tests*.dll'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
+    command: 'test'
+    projects: '**\*Tests\*.csproj'
 
 - task: AzureFunctionApp@1
   inputs:
