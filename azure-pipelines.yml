@@ -38,5 +38,5 @@ steps:
     azureSubscription: 'Free Trial(52e3fd2e-facb-4326-b2cf-62e48ee1059f)'
     appType: 'functionApp'
     appName: 'hello-function-sample'
-    package: '$(build.artifactStagingDirectory)/**/*.zip'
+    package: '$(System.ArtifactsDirectory)/**/*.zip'
     deploymentMethod: 'auto'
