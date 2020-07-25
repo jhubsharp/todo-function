@@ -1,4 +1,11 @@
 # ASP.NET
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Free Trial(52e3fd2e-facb-4326-b2cf-62e48ee1059f)'
+    appType: 'functionApp'
+    appName: 'HelloFunction'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
 # Build and test ASP.NET projects.
 # Add steps that publish symbols, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
