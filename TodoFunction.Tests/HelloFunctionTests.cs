@@ -40,7 +40,7 @@ namespace TodoFunction.Tests
 
             var response = (OkObjectResult)await HelloFunction.Run(request, logger);
 
-            response.Value.ShouldBe("Hello, Robert. This HTTP triggered function executed successfully.");
+            response.Value.ShouldBe("Hello, Robert. Welcome to this amazing Azure Function!");
         }
     }
 }
