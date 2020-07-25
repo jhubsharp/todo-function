@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace TodoFunction
 {
-    public static class Function1
+    public static class HelloFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("HelloFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
